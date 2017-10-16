@@ -1,0 +1,59 @@
+<!--
+ * 我的财富
+ * @Author   major.miao
+ * @DateTime 2016-11-25
+-->
+<view class="my-treasure-container">
+    <view class="header-view">
+        <!--用户头像-->
+        <view class="user-view">
+            <image src="@@@PREFIX@@@/treasure/default-img.png"></image>
+            <view class="userInfo-box">
+                <view class="userName">未登录</view>
+                <view class="userPhone">***</view>
+            </view>
+        </view>
+    </view>
+    <view class="item-choice" bindtap="enterApprove">
+        <icon class="icon-approve"></icon>
+        <text class="item-choice-title">最新消息</text>
+        <view class="item-choice-content">
+            <text></text>
+            <text class="text-arrows"></text>
+        </view>
+    </view>
+    <view class="item-choice" >
+        <icon class="icon-appraisal"></icon>
+        <text class="item-choice-title">业务预约</text>
+        <view class="item-choice-content">
+            <text></text>
+            <text class="text-arrows"></text>
+        </view>
+    </view>
+    <view class="item-choice">
+        <icon class="icon-card"></icon>
+        <text class="item-choice-title">物业审核</text>
+        <view class="item-choice-content">
+            <text class="text-arrows"></text>
+        </view>
+    </view>
+    <view class="item-choice">
+        <icon class="icon-feedback"></icon>
+        <text class="item-choice-title">论坛文章</text>
+        <view class="item-choice-content">
+            <text></text>
+            <text class="text-arrows"></text>
+        </view>
+    </view>
+    <view class="item-choice" bindtap="enterAbout">
+        <icon class="icon-about"></icon>
+        <text class="item-choice-title">资料修改</text>
+        <view class="item-choice-content">
+            <text></text>
+            <text class="text-arrows"></text>
+        </view>
+    </view>
+    <view class="item-btn-view">
+        <button class="item-btn">立即登录</button>
+    </view>
+</view>

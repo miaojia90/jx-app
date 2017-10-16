@@ -1,0 +1,38 @@
+{
+  "name": "app_h5",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "gulp.babel.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.0.1",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-register": "^6.11.6",
+    "browser-sync": "^2.12.5",
+    "del": "^2.2.1",
+    "gulp": "gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-changed": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-filter": "^4.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-postcss": "^7.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.6.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^3.0.0",
+    "path": "^0.12.7",
+    "postcss": "^6.0.8",
+    "postcss-sprites": "^4.2.1",
+    "require-dir": "^0.3.1",
+    "gulp-str-replace": "^0.0.4",
+    "yargs": "^6.3.0"
+  }
+}

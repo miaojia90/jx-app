@@ -1,0 +1,233 @@
+@function rpxchange($px) {
+  @return $px*2rpx;
+}
+$imgUrlPath:"@@@RESPREFIX@@@";
+@function urlPath($url) {
+  @return url($imgUrlPath+$url);
+}
+page{
+  background-color:#F4F5F7;
+}
+
+.my-treasure-container{
+  .header-view{
+    background: urlPath("treasure/head-bg.png") center top; 
+    background-size:100% auto;
+    margin-bottom:20rpx;
+    .user-view{
+      padding: rpxchange(15) rpxchange(15);
+      overflow: hidden;
+      font-size: rpxchange(20);
+      color: #0A1437;
+      image{
+        float: left;
+        width: rpxchange(60);
+        height: rpxchange(60);
+        border:1px solid #F4F5F7;
+        border-radius:50%;
+      }
+      .userInfo-box{
+        float: left;
+        padding-left:rpxchange(15);
+        .userName{
+          padding-top:rpxchange(5);
+          font-weight: 600;
+        }
+        .userPhone{
+          padding-top:rpxchange(10);
+        }
+      }
+    }
+    .user-asset-view{
+      overflow: hidden;
+      padding-bottom:rpxchange(30);
+      .asset-box{
+        float: left;
+        width: 33.3%;
+        text{
+          display: block;
+          text-align: center;
+          &.money-text{
+             font-size: rpxchange(22);
+             color: #555A73;
+             height: rpxchange(24);
+             line-height: rpxchange(24);
+          }
+          &.desc-text{
+            font-size: rpxchange(14);
+            color: #82879B;
+            height: rpxchange(16);
+            line-height: rpxchange(16);
+          }
+        }
+      }
+    }
+  }
+  .item-choice{
+      background-color:#FFF;
+      height: rpxchange(50);
+      line-height: rpxchange(50);
+      font-size: rpxchange(16);
+      color: #666C88;
+      padding-left:rpxchange(20);
+      border-bottom: 1px solid #F4F5F7;
+      icon{
+        width: rpxchange(18);
+        height: rpxchange(18);
+        display:inline-block;
+        vertical-align: text-bottom;
+        margin-right: rpxchange(10);
+      }
+      .item-choice-content{
+        float: right;
+        padding-right:rpxchange(15);
+      }
+      .icon-appraisal{
+        background:urlPath("treasure/icon-appraisal.png") center top;
+        background-size:100% auto;
+      }
+      .icon-approve{
+        background:urlPath("treasure/icon-approve.png") center top;
+        background-size:100% auto;
+      }
+      .icon-card{
+        background:urlPath("businessCard/business_card.png") center top;
+        background-size:100% auto;
+      }
+      .icon-feedback{
+        background:urlPath("treasure/icon-feedback.png") center top;
+        background-size:100% auto;
+      }
+      .icon-positions{
+        background:urlPath("treasure/icon-positions.png") center top;
+        background-size:100% auto;
+      }
+      .icon-about{
+        background:urlPath("treasure/icon-about.png") center top;
+        background-size:100% auto;
+      }
+  }
+  .item-btn{
+    margin-top: rpxchange(30);
+    color: #D2B978;
+    background-color: #FFF;
+    border:none;
+    border-radius:0;
+    &:after{
+      border:none;
+    }
+  }
+}
+.text-arrows{
+  width: rpxchange(8);
+  height: rpxchange(8);
+  display:inline-block;
+  border-top:1px solid #ABB2D0;
+  border-right:1px solid #ABB2D0;
+  margin-left:rpxchange(8);
+  transform:rotate(45deg);
+}
+
+.text-arrows-nor{
+  width: rpxchange(8);
+  height: rpxchange(8);
+  display:block;
+  margin-top:rpxchange(20);
+  border-top:1px solid #ABB2D0;
+  border-right:1px solid #ABB2D0;
+  margin-left:rpxchange(8);
+  transform:rotate(45deg);
+}
+//弹出框
+.pop-up-box-view{
+   width:rpxchange(256);
+   height: rpxchange(320);
+   position:absolute;
+   top:50%;
+   left:50%;
+   margin-top: rpxchange(-200);
+   margin-left: rpxchange(-150);
+   background-color:#FFF;
+   border-radius:rpxchange(10);
+   z-index: 199;
+   padding:rpxchange(40) rpxchange(22);
+   .desc-text{
+    color:#232D4B;
+    font-size: rpxchange(16);
+    text-align: center;
+   }
+
+   .real-name-btn{
+      color: #FFF;
+      font-size: rpxchange(17);
+      text-align: center;
+      background-color: #D2B978;
+      height: rpxchange(44);
+      border-radius:rpxchange(22);
+      margin-top:rpxchange(30);
+   }
+   .step-box{
+      border:1px solid #DBDEE4;
+      height: rpxchange(60);
+      line-height: rpxchange(60);
+      margin-top: rpxchange(40);
+      color: #82879B;
+      font-size: rpxchange(16);
+      position:relative;
+   }
+   .step-mark{
+      width: rpxchange(60);
+      height: rpxchange(21);
+      display: block;
+      position:absolute;
+      top:rpxchange(-10);
+      left:50%;
+      margin-left:rpxchange(-30);
+      background-color:#D5D8DF;
+      border-radius:rpxchange(10.5);
+      text-align: center;
+      font-size: rpxchange(15);
+   }
+    .step-mark-text{
+      width: rpxchange(60);
+      height: rpxchange(21);
+      display: block;
+      position:absolute;
+      top:rpxchange(-31);
+      left:50%;
+      color: #FFF;
+      margin-left:rpxchange(-30);
+      border-radius:rpxchange(10.5);
+      text-align: center;
+      font-size: rpxchange(15);
+   }
+   icon{
+        width: rpxchange(18);
+        height: rpxchange(18);
+        display:inline-block;
+        vertical-align: text-bottom;
+        margin-right: rpxchange(10);
+        margin-left: rpxchange(85);
+    }
+    .item-choice-content{
+      float: right;
+      padding-right:rpxchange(15);
+    }
+    .icon-appraisal{
+      background:urlPath("treasure/icon-appraisal.png") center top;
+      background-size:100% auto;
+    }
+    .icon-approve{
+      background:urlPath("treasure/icon-approve.png") center top;
+      background-size:100% auto;
+    }
+    .icon-delete{
+        width: rpxchange(28);
+        height: rpxchange(28);
+        position:absolute;
+        right: 0;
+        top:rpxchange(5);
+        background:urlPath("treasure/icon-delete-normal.png") center top;
+        background-size:100% auto;
+    }
+}
