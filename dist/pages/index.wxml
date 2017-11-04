@@ -6,27 +6,29 @@
 <view class="index-main-container">
     <view class="head-opreate">
         <view class="opreate-region-view">
-            <view class="item">
+            <view class="item" bindtap="bindBridgeLoan" data-type="bridge">
                 <view class="desc-text">过桥</view>
-                <view class="desc-icon"></view>
+                <view class="desc-icon">
+                     <image  src="../../img/page/bridge_loan.png" class="img-icon"></image>
+                </view>
             </view>
         </view>
-        <view class="opreate-region-view">
+        <view class="opreate-region-view" bindtap="bindBridgeLoan" data-type="floor">
             <view class="item">
                 <view class="desc-text">赎楼</view>
-                <view class="desc-icon"></view>
+                <view class="desc-icon"> <image  src="../../img/page/floor.png" class="img-icon"></image></view>
             </view>
         </view>
-        <view class="opreate-region-view">
+        <view class="opreate-region-view" bindtap="bindBridgeLoan" data-type="property">
             <view class="item">
                 <view class="desc-text">物业</view>
-                <view class="desc-icon"></view>
+                <view class="desc-icon"> <image  src="../../img/page/build.png" class="img-icon"></image></view>
             </view>
         </view>
-        <view class="opreate-region-view">
+        <view class="opreate-region-view" bindtap="bindBridgeLoan" data-type="others">
             <view class="item">
                 <view class="desc-text">其他</view>
-                <view class="desc-icon"></view>
+                <view class="desc-icon"> <image  src="../../img/page/other.png" class="img-icon"></image></view>
             </view>
         </view>
     </view>
@@ -39,7 +41,7 @@
             <view>
                 <view class="flex box box-tb box-align-center">
                     <view class="calendar pink-color box box-tb">
-                        <view class="top-handle fs28 box box-lr box-align-center box-pack-center">
+                        <view class="top-handle fs32 box box-lr box-align-center box-pack-center">
                             <view class="prev box box-rl" bindtap="handleCalendar" data-handle="prev">
                                 <view class="prev-handle box box-lr box-align-center box-pack-center">《</view>
                             </view>
@@ -49,7 +51,7 @@
                             </view>
                         </view>
                         <view class="weeks box box-lr box-pack-center box-align-center">
-                            <view class="flex week fs28" wx:for="{{weeks_ch}}" wx:key="{{index}}" data-idx="{{index}}">{{item}}</view>
+                            <view class="flex week fs32" wx:for="{{weeks_ch}}" wx:key="{{index}}" data-idx="{{index}}">{{item}}</view>
                         </view>
                         <view class="days box box-lr box-wrap">
                             <view wx:if="{{hasEmptyGrid}}" class="grid white-color box box-align-center box-pack-center" wx:for="{{empytGrids}}" wx:key="{{index}}" data-idx="{{index}}">

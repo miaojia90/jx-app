@@ -1,0 +1,9 @@
+@function rpxchange($px) {
+    @return $px*2rpx;
+}
+
+$imgUrlPath:"@@@RESPREFIX@@@";
+@function urlPath($url) {
+    @return url($imgUrlPath+$url);
+}
+@import '../../common/imageUploader/imageUploader.scss';

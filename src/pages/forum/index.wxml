@@ -1,0 +1,79 @@
+<!--
+ * 我的财富
+ * @Author   major.miao
+ * @DateTime 2017-11-01
+-->
+<view class="forum-container">
+    <view class="head-container">
+        <view class="left-box">
+            <view class="item">
+                <view class="desc-icon">
+                    <image src="../../img/page/bank-forum.png" class="img-icon"></image>
+                </view>
+                <view class="desc-text">银行之家</view>
+            </view>
+        </view>
+        <view class="right-box">
+            <view class="item">
+                <view class="desc-icon">
+                    <image src="../../img/page/build-forum.png" class="img-icon"></image>
+                </view>
+                <view class="desc-text">物业供求</view>
+            </view>
+        </view>
+    </view>
+    <view class="item-list-container">
+        <view class="item-choice">
+            <view class="item-choice-title">
+                <image src="../../img/page/new.png" class="img-icon"></image>
+                <text>最新文章</text>
+            </view>
+            <text class="text-arrows"></text>
+        </view>
+        <view class="item-container">
+            <view class="item">
+                <image src="../../img/page/new-list.png" class="img-icon"></image>
+                <text>20170915市场拆借利率</text>
+            </view>
+            <view class="item">
+                <image src="../../img/page/new-list.png" class="img-icon"></image>
+                <text>国土新动向</text>
+            </view>
+            <view class="item">
+                <image src="../../img/page/new-list.png" class="img-icon"></image>
+                <text>出租贷款主体</text>
+            </view>
+            <view class="item">
+                <image src="../../img/page/new-list.png" class="img-icon"></image>
+                <text>金欣投资物业咨询</text>
+            </view>
+        </view>
+    </view>
+    <view class="item-list-container">
+        <view class="item-choice">
+            <view class="item-choice-title">
+                <image src="../../img/page/spe.png" class="img-icon"></image>
+                <text>精选文章</text>
+            </view>
+            <text class="text-arrows"></text>
+        </view>
+        <view class="item-container">
+            <view class="item">
+                <image src="../../img/page/spe-list.png" class="img-icon"></image>
+                <text>20170915市场拆借利率</text>
+            </view>
+            <view class="item">
+                <image src="../../img/page/spe-list.png" class="img-icon"></image>
+                <text>国土新动向</text>
+            </view>
+            <view class="item">
+                <image src="../../img/page/spe-list.png" class="img-icon"></image>
+                <text>出租贷款主体</text>
+            </view>
+            <view class="item">
+                <image src="../../img/page/new-list.png" class="img-icon"></image>
+                <text>金欣投资物业咨询</text>
+            </view>
+        </view>
+    </view>
+</view>

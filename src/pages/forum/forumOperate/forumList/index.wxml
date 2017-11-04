@@ -1,0 +1,25 @@
+<!--
+ * 我的财富
+ * @Author   major.miao
+ * @DateTime 2017-11-01
+-->
+<view class="main-list-container">
+    <view class="list-item-container">
+        <view class="item">
+            <view class="user-header-box">
+               <image src="@@@PREFIX@@@/treasure/default-img.png"></image>
+            </view>
+            <view class="content-box">
+                <view class="title mui-ellipsis-1">
+                    市场拆借利率
+                </view>
+                <view class="content mui-ellipsis-2">
+                    20170915市场拆借利率,20170915市场拆借利率,20170915市场拆借利率,20170915市场拆借利率20170915市场拆借利率,20170915市场拆借利率,20170915市场拆借利率,20170915市场拆借利率20170915市场拆借利率,20170915市场拆借利率,20170915市场拆借利率,20170915市场拆借利率
+                </view>
+                <view class="desc">
+                    <text class="date">2017-11-05 12:00</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

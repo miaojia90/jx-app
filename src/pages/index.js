@@ -10,7 +10,7 @@ const conf = {
 		const date = new Date();
 		const cur_year = date.getFullYear();
 		const cur_month = date.getMonth() + 1;
-		const weeks_ch = [ '日', '一', '二', '三', '四', '五', '六' ];
+		const weeks_ch = ['日', '一', '二', '三', '四', '五', '六'];
 		this.calculateEmptyGrids(cur_year, cur_month);
 		this.calculateDays(cur_year, cur_month);
 		this.setData({
@@ -99,7 +99,7 @@ const conf = {
 	tapDayItem(e) {
 		const idx = e.currentTarget.dataset.idx;
 		const days = this.data.days;
-		days[ idx ].choosed = !days[ idx ].choosed;
+		days[idx].choosed = !days[idx].choosed;
 		this.setData({
 			days,
 		});
@@ -118,7 +118,7 @@ const conf = {
 		const idx_year = picker_year.indexOf(cur_year);
 		const idx_month = picker_month.indexOf(cur_month);
 		this.setData({
-			picker_value: [ idx_year, idx_month ],
+			picker_value: [idx_year, idx_month],
 			picker_year,
 			picker_month,
 			showPicker: true,
@@ -140,15 +140,37 @@ const conf = {
 			this.calculateEmptyGrids(choose_year, choose_month);
 			this.calculateDays(choose_year, choose_month);
 		}
-		
+
 		this.setData(o);
 	},
-	onShareAppMessage() {
-		return {
-			title: '小程序日历',
-			desc: '还是新鲜的日历哟',
-			path: 'pages/index/index'
-		};
+	bindBridgeLoan(e) {
+		var type = e.currentTarget.dataset.type;
+		switch (type) {
+			case 'bridge':
+				//跳转到相对于的页面
+				wx.navigateTo({
+					url: './business/bridgeLoan/index'
+				});
+				break;
+			case 'floor':
+				//跳转到相对于的页面
+				wx.navigateTo({
+					url: './business/ransomFloor/index'
+				});
+				break;
+			case 'property':
+				//跳转到相对于的页面
+				wx.navigateTo({
+					url: './business/property/index'
+				});
+				break;
+			case 'others':
+				//跳转到相对于的页面
+				wx.navigateTo({
+					url: './business/others/index'
+				});
+				break;
+		}
 	}
 };
 

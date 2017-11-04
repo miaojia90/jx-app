@@ -1,9 +1,13 @@
 page {
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+@function rpxchange($px) {
+    @return $px*2rpx;
 }
 
 .box {
@@ -90,28 +94,184 @@ page {
 .shrink {
     flex-shrink: 1;
 }
+
 .bg {
-  background-image: linear-gradient(to bottom, #faefe7, #ffcbd7);
-  overflow: hidden;
+    background-image: linear-gradient(to bottom, #faefe7, #ffcbd7);
+    overflow: hidden;
 }
+
 .brown-color {
-  color: #784344;
+    color: #784344;
 }
+
 .pink-color {
-  color: #ff629a;
+    color: #13227a;
 }
+
 .white-color {
-  color: #fff;
+    color: #fff;
 }
+
 .fs24 {
-  font-size: 24rpx;
+    font-size: 24rpx;
 }
+
 .fs28 {
-  font-size: 28rpx;
+    font-size: 28rpx;
 }
+
 .fs32 {
-  font-size: 32rpx;
+    font-size: 32rpx;
 }
+
 .fs36 {
-  font-size: 36rpx;
+    font-size: 36rpx;
+}
+
+.form-main-container {
+    padding: rpxchange(20) 0 rpxchange(60) 0;
+    background-color: #FFF;
+    color: #0A1437;
+    .content-box {
+        clear: both;
+        margin: 0 rpxchange(35);
+        margin-bottom: rpxchange(10);
+        font-size: rpxchange(16);
+        padding: rpxchange(10) rpxchange(10);
+        border: rpxchange(1) solid #DBDEE4;
+        font-size: rpxchange(16);
+        color: #222C56;
+        vertical-align: middle;
+        border-radius: rpxchange(10);
+        &.no-border {
+            border: 0px;
+        }
+        .input-view {
+            overflow: hidden;
+            label {
+                float: left;
+                line-height: rpxchange(30);
+            }
+            input {
+                float: left;
+                height: rpxchange(30);
+                line-height: rpxchange(30);
+            }
+        }
+        .placeholder {
+            font-size: rpxchange(16);
+            color: #222C56;
+        }
+        .checkbox-label {
+            vertical-align: middle;
+        }
+        .checkbox-item {
+            height: rpxchange(40);
+        }
+        .radio-view {
+            display: inline-block;
+        }
+        .text-view {
+            display: inline-block;
+            font-size: rpxchange(16);
+            line-height: rpxchange(40);
+            color: #222C56;
+            vertical-align: middle;
+        }
+        .textarea-view {
+            width: 100%;
+            height: rpxchange(100);
+        }
+    }
+    .btn-view {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #FFF;
+        border-top: 0.5px solid #F4F5F7;
+        .btn-save {
+            color: #FFF;
+            background-color: #8a8a8a;
+            font-size: rpxchange(17);
+            height: rpxchange(55);
+            line-height: rpxchange(55);
+            letter-spacing: rpxchange(4);
+            &.active {
+                background-color: #13227a;
+                color: #FFF;
+            }
+            border-radius:0px;
+        }
+    }
+}
+
+.main-list-container {
+    .list-item-container {
+        background-color: #FFF;
+        .item {
+            padding: rpxchange(10) rpxchange(15);
+            &:after {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 1px;
+                background-color: #dbdee4;
+                transform: scaleY(0.5);
+            }
+            &:last-child {
+                &:after {
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    height: 0px;
+                    background-color: #dbdee4;
+                    transform: scaleY(0.5);
+                }
+            }
+            text {
+                width: 100%;
+                font-size: rpxchange(16);
+                color: #222C56;
+            }
+            .title {
+                font-size: rpxchange(18);
+                height: rpxchange(30);
+                line-height: rpxchange(30);
+            }
+            .content {
+                font-size: rpxchange(18);
+                color: #555a73;
+                line-height: rpxchange(30);
+            }
+            .desc {
+                line-height: rpxchange(30);
+                overflow: hidden;
+                .date {
+                    width: rpxchange(150);
+                    float: right;
+                }
+            }
+        }
+    }
+}
+
+.mui-ellipsis-2 {
+    display: -webkit-box;
+    display: box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.mui-ellipsis-1 {
+    display: -webkit-box;
+    display: box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
 }

@@ -6,18 +6,19 @@ import yargs from 'yargs';
 const argv = yargs.argv;
 const reload = browserSync.reload;
 
-requireDir('./gulp/tasks', { recurse: true });
+requireDir('./gulp/tasks', {
+    recurse: true
+});
 
 /* https://github.com/gulpjs/gulp/blob/4.0/docs/API.md*/
 gulp.task('serve', () => {
-    browserSync.init({
-        server: {
-            baseDir: './'
-        },
-        open: false,
-        directory: true
-    });
-
+    // browserSync.init({
+    //     server: {
+    //         baseDir: './'
+    //     },
+    //     open: false,
+    //     directory: true
+    // });
 
     gulp.watch(config.scss.src, gulp.series('css:sass'));
     gulp.watch(config.img.src, gulp.series('img'));
@@ -26,8 +27,8 @@ gulp.task('serve', () => {
     gulp.watch(config.json.src, gulp.series('json:copy'));
 });
 //生产开发环境配置
-const pro=gulp.series('clean', 'css:sass', 'img', 'js:copy', 'json:copy','wxml:copy','serve');
-const dev=gulp.series('clean', 'css:sass', 'img', 'js:copy', 'json:copy','wxml:copy','serve');
+const pro = gulp.series('clean', 'css:sass', 'img', 'js:copy', 'json:copy', 'wxml:copy', 'serve');
+const dev = gulp.series('clean', 'css:sass', 'img', 'js:copy', 'json:copy', 'wxml:copy', 'serve');
 //任务区分
-const task= !!argv.pro?pro:dev;
+const task = !!argv.pro ? pro : dev;
 export default task;

@@ -1,0 +1,41 @@
+<!--
+ * 主页
+ * @Author   major.miao
+ * @DateTime 2017-11-02
+-->
+<view class="form-main-container">
+    <form bindsubmit="formSubmit">
+        <view class="content-box">
+            <input class="input-view" type="text" placeholder="借款主体名称" placeholder-class="placeholder"/>
+        </view>
+        <view class="content-box">
+            <input class="input-view" type="text" placeholder="联系人名称" placeholder-class="placeholder"/>
+        </view>
+        <view class="content-box">
+            <input class="input-view" type="number" placeholder="联系人电话" maxlength="11" placeholder-class="placeholder"/>
+        </view>
+        <view class="content-box">
+            <input class="input-view" type="number" placeholder="资金缺口" placeholder-class="placeholder"/>
+        </view>
+        <view class="content-box">
+            <input class="input-view" type="number" placeholder="预约用款日" placeholder-class="placeholder"/>
+        </view>
+        <view class="content-box">
+            <input class="input-view" type="number" placeholder="预计使用天数(10月28日填写1028)" placeholder-class="placeholder" />
+        </view>
+        <view class="content-box">
+            <input class="input-view" type="number" placeholder="最早用款日" placeholder-class="placeholder" />
+        </view>
+        <view class="content-box">
+            <input class="input-view" type="number" placeholder="最迟用款日" placeholder-class="placeholder"/>
+        </view>
+        <view class="content-box no-border">
+            <radio  class="radio-view" /><text class="text-view" >合同期内</text>
+        </view>
+        <view class="btn-view">
+            <button class="btn-save active" formType="submit" size="default">
+                保存
+            </button>
+        </view>
+    </form>
+</view>

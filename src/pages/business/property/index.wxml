@@ -1,0 +1,65 @@
+<!--
+ * 主页
+ * @Author   major.miao
+ * @DateTime 2017-11-02
+-->
+<import src="../../common/imageUploader/imageUploader.wxml" />
+<view class="form-main-container">
+    <form bindsubmit="formSubmit">
+        <view class="content-box">
+            <view class="section">
+                <picker bindchange="bindPickerChange" value="{{itemTypeIndex}}" range="{{arrayItemType}}">
+                    <view class="picker">
+                        类别：{{arrayItemType[itemTypeIndex]}}
+                    </view>
+                </picker>
+            </view>
+        </view>
+        <view class="content-box">
+            <view class="section">
+                <picker bindchange="attributeBindPickerChange" value="{{itemAttributeIndex}}" range="{{arrayItemAttribute}}">
+                    <view class="picker">
+                        性质：{{arrayItemAttribute[itemAttributeIndex]}}
+                    </view>
+                </picker>
+            </view>
+        </view>
+        <view class="content-box">
+            <view class="input-view">
+                <input class="input-view" type="text" placeholder="业主名称" placeholder-class="placeholder" />
+            </view>
+        </view>
+        <view class="content-box">
+            <input class="input-view" type="text" placeholder="联系人(与业主关系)" placeholder-class="placeholder" />
+        </view>
+        <view class="content-box">
+            <input class="input-view" type="text" placeholder="联系电话" placeholder-class="placeholder" />
+        </view>
+        <view class="content-box">
+            <input class="input-view" type="text" placeholder="土地面积" placeholder-class="placeholder" />
+        </view>
+        <view class="content-box">
+            <input class="input-view" type="number" placeholder="建筑面积" placeholder-class="placeholder" />
+        </view>
+        <view class="content-box no-border">
+            <label>房租款项性质</label>
+            <checkbox-group bindchange="checkboxChange">
+                <view wx:for="{{itemsLoanProperty}}" class="checkbox-item">
+                    <checkbox value="{{item.name}}" checked="{{item.checked}}" class="checkbox" />
+                    <label class="checkbox-label">
+                        {{item.value}}
+                    </label>
+                </view>
+            </checkbox-group>
+        </view>
+        <!-- 上传 -->
+        <view class="container">
+            <template is="image_uploader" data="{{...uploadImgObj}}" />
+        </view>
+        <view class="btn-view">
+            <button class="btn-save" formType="submit" size="default">
+                保存
+            </button>
+        </view>
+    </form>
+</view>

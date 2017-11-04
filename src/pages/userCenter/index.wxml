@@ -15,15 +15,15 @@
         </view>
     </view>
     <view class="item-choice" bindtap="enterApprove">
-        <icon class="icon-approve"></icon>
+        <image src="../../img/page/zx.png"></image>
         <text class="item-choice-title">最新消息</text>
         <view class="item-choice-content">
             <text></text>
             <text class="text-arrows"></text>
         </view>
     </view>
-    <view class="item-choice" >
-        <icon class="icon-appraisal"></icon>
+    <view class="item-choice">
+        <image src="../../img/page/yy.png"></image>
         <text class="item-choice-title">业务预约</text>
         <view class="item-choice-content">
             <text></text>
@@ -31,14 +31,14 @@
         </view>
     </view>
     <view class="item-choice">
-        <icon class="icon-card"></icon>
+        <image src="../../img/page/sh.png"></image>
         <text class="item-choice-title">物业审核</text>
         <view class="item-choice-content">
             <text class="text-arrows"></text>
         </view>
     </view>
     <view class="item-choice">
-        <icon class="icon-feedback"></icon>
+        <image src="../../img/page/lt.png"></image>
         <text class="item-choice-title">论坛文章</text>
         <view class="item-choice-content">
             <text></text>
@@ -46,7 +46,7 @@
         </view>
     </view>
     <view class="item-choice" bindtap="enterAbout">
-        <icon class="icon-about"></icon>
+        <image src="../../img/page/xg.png"></image>
         <text class="item-choice-title">资料修改</text>
         <view class="item-choice-content">
             <text></text>

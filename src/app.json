@@ -1,5 +1,11 @@
 {
     "pages": [
+        "pages/forum/forumOperate/forumList/index",
+        "pages/forum/index",
+        "pages/business/others/index",
+        "pages/business/ransomFloor/index",
+        "pages/business/property/index",
+        "pages/business/bridgeLoan/index",
         "pages/index",
         "pages/userCenter/index"
     ],
@@ -9,26 +15,24 @@
         "navigationBarBackgroundColor": "#071436"
     },
     "tabBar": {
-        "color": "#82879B",
-        "selectedColor": "#B4923B",
+        "color": "#707070",
+        "selectedColor": "#13227a",
         "borderStyle": "#dbdee4",
         "backgroundColor": "#FFF",
         "list": [{
             "pagePath": "pages/index",
-            "iconPath": "img/b_ico_1.png",
-            "selectedIconPath": "img/b_ico_1_active.png",
+            "iconPath": "img/index.png",
+            "selectedIconPath": "img/index-active.png",
             "text": "主页"
-        }, 
-        {
-            "pagePath": "pages/index",
-            "iconPath": "img/icon-optional.png",
-            "selectedIconPath": "img/icon-optional_active.png",
+        }, {
+            "pagePath": "pages/forum/index",
+            "iconPath": "img/talk.png",
+            "selectedIconPath": "img/talk-active.png",
             "text": "论坛"
-        }, 
-        {
+        }, {
             "pagePath": "pages/userCenter/index",
-            "iconPath": "img/b_ico_2.png",
-            "selectedIconPath": "img/b_ico_2_active.png",
+            "iconPath": "img/my.png",
+            "selectedIconPath": "img/my-active.png",
             "text": "我的"
         }]
     },

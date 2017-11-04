@@ -1,7 +1,7 @@
 .index-main-container {
   background-color: #F4F5F7;
   font-size: 32rpx;
-  color: #9AA0AC;
+  color: #13227a;
 }
 
 .index-main-container .head-opreate {
@@ -25,22 +25,26 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 20rpx;
+  padding: 40rpx;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
 }
 
 .index-main-container .head-opreate .opreate-region-view .item .desc-text {
-  line-height: 120rpx;
+  line-height: 80rpx;
   padding: 0 20rpx;
 }
 
 .index-main-container .head-opreate .opreate-region-view .item .desc-icon {
-  width: 120rpx;
-  height: 120rpx;
+  width: 80rpx;
+  height: 80rpx;
   border-radius: 50%;
-  border: 1px solid #dbdee4;
+}
+
+.index-main-container .head-opreate .opreate-region-view .item .desc-icon .img-icon {
+  width: 80rpx;
+  height: 80rpx;
 }
 
 .index-main-container .detail-item {
@@ -72,7 +76,7 @@
 
 /* pages/calendar/calendar.wxss */
 .top-handle {
-  height: 80rpx;
+  height: 100rpx;
 }
 
 .prev {
@@ -103,7 +107,7 @@
 .weeks {
   height: 50rpx;
   line-height: 50rpx;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .week {
@@ -121,7 +125,7 @@
 .day {
   width: 60rpx;
   height: 60rpx;
-  color: #88d2ac;
+  color: #707070;
   font-size: 26rpx;
   font-weight: 200;
 }
@@ -135,7 +139,7 @@
 }
 
 .pink-bg {
-  background-color: #ff629a;
+  background-color: #F00;
 }
 
 .purple-bg {
@@ -148,7 +152,7 @@
   width: 0;
   height: 0;
   border: 15rpx solid transparent;
-  border-left-color: #ff629a;
+  border-left-color: #13227a;
   position: absolute;
   right: -22rpx;
   top: 18rpx;
@@ -160,7 +164,7 @@
   width: 0;
   height: 0;
   border: 15rpx solid transparent;
-  border-right-color: #ff629a;
+  border-right-color: #13227a;
   position: absolute;
   left: -22rpx;
   top: 18rpx;

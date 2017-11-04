@@ -1,0 +1,23 @@
+<!--
+ * 我的财富
+ * @Author   major.miao
+ * @DateTime 2017-11-01
+-->
+<view class="main-list-container">
+    <view class="detail-container">
+        <view class="title">
+            
+        </view>
+        <view class="operate">
+            <view class="">
+                
+            </view>
+            <view class="date">
+                
+            </view>
+        </view>
+        <view class="forum">
+            
+        </view>
+    </view>
+</view>                                                         
