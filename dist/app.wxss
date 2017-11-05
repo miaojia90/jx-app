@@ -296,12 +296,12 @@ page {
 }
 
 .main-list-container .list-item-container .item .content-box .news-title {
-  font-size: 36rpx;
+  font-size: 32rpx;
   color: #d81e06;
 }
 
 .main-list-container .list-item-container .item .content-box .tel-phone {
-  font-size: 36rpx;
+  font-size: 32rpx;
   color: #1296db;
 }
 
@@ -317,14 +317,14 @@ page {
 
 .main-list-container .list-item-container .item .title {
   width: 100%;
-  font-size: 36rpx;
+  font-size: 32rpx;
   height: 60rpx;
   line-height: 60rpx;
 }
 
 .main-list-container .list-item-container .item .content {
   width: 100%;
-  font-size: 36rpx;
+  font-size: 32rpx;
   color: #555a73;
   line-height: 60rpx;
 }
@@ -384,4 +384,8 @@ page {
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
   /*超出部分文字以...显示*/
+}
+
+.header-box image {
+  border-radius: 50%;
 }

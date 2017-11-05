@@ -230,11 +230,11 @@ page {
                     margin-left:0;
                 }
                 .news-title{
-                    font-size: rpxchange(18);
+                    font-size: rpxchange(16);
                     color:#d81e06;
                 }
                 .tel-phone{
-                    font-size: rpxchange(18);
+                    font-size: rpxchange(16);
                     color:#1296db;
                 }
             }
@@ -249,13 +249,13 @@ page {
             }
             .title {
                 width: 100%;
-                font-size: rpxchange(18);
+                font-size: rpxchange(16);
                 height: rpxchange(30);
                 line-height: rpxchange(30);
             }
             .content {
                 width: 100%;
-                font-size: rpxchange(18);
+                font-size: rpxchange(16);
                 color: #555a73;
                 line-height: rpxchange(30);
             }
@@ -311,4 +311,10 @@ page {
     /*不换行*/
     text-overflow: ellipsis;
     /*超出部分文字以...显示*/
+}
+
+.header-box{
+    image{
+        border-radius:50%;
+    }
 }

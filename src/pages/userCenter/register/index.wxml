@@ -6,18 +6,18 @@
 <view class="main-container">
     <view class="update-user-box">
         <view class="header-box">
-            <image src="@@@PREFIX@@@/treasure/default-img.png"></image>
+            <image src="{{userInfo!=null?userInfo.avatarUrl:'@@@PREFIX@@@/treasure/default-img.png'}}"></image>
         </view>
         <view class="content-box">
             <view class="form-main-container">
-                <form>
+                <form bindsubmit="formSubmit">
                     <view class="content-box">
-                        <input class="input-view" type="text" placeholder="昵称" placeholder-class="placeholder" />
+                        <input class="input-view" type="text" placeholder="昵称" placeholder-class="placeholder" name="userName"  />
                     </view>
-                    <view class="content-box" wx:if="{{false}}">
-                        <input class="input-view" type="number" placeholder="联系人电话" maxlength="11" placeholder-class="placeholder" />
+                    <view class="content-box" wx:if="{{registerFlag}}">
+                        <input class="input-view" type="number" placeholder="电话(选填)" maxlength="11" placeholder-class="placeholder" name="userhone"/>
                     </view>
-                    <view class="content-box" wx:if="{{false}}">
+                    <view class="content-box" wx:if="{{registerFlag}}">
                         <view class="section">
                             <picker bindchange="bindPickerChange" value="{{itemTypeIndex}}" range="{{arrayItemType}}">
                                 <view class="picker">
@@ -26,14 +26,14 @@
                             </picker>
                         </view>
                     </view>
-                    <view class="content-box" wx:if="{{false}}">
-                        <input class="input-view" type="number" placeholder="邀请码" maxlength="11" placeholder-class="placeholder" class="invite-code" />
+                    <view class="content-box" wx:if="{{registerFlag && typeFlag}}">
+                        <input class="input-view" type="number" placeholder="邀请码" maxlength="11" placeholder-class="placeholder" class="invite-code" name="inviteCode"/>
                     </view>
                     <view class="other-box">
-                         <text>登录</text>|
-                         <text>注册</text>
+                         <text bindtap="changeRegister" data-id="0">登录</text>|
+                         <text bindtap="changeRegister" data-id="1">注册</text>
                     </view>
-                    <view class="btn-view" bindtap="bindStartEnterApp">
+                    <view class="btn-view">
                         <button class="btn-save no-letter active" formType="submit" size="default">
                            开启金欣小程序
                         </button>

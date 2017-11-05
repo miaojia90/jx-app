@@ -10,8 +10,14 @@ var Base = {
     publicKey: "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCJHooMe+cMSx/thsHtXv7ZzhD7h/7eyuC7Qc0j99mwNeoOLu1PBe/gZL4x/Dix2sykvqs0ED6vma5+cPfiGUdAh/aANoSvGG4VpczHIvhz/yEPJ5pgWGjiI8m9fezzKHuarmBLiRqit+yLbLPpTSeaY5EjxUaUF/ltWpwn6+LpQwIDAQAB",
     //公共的数据
     data: {
-        storageKeys: {
+        storageKeys: {}
+    },
+    //去掉字符串前后空格
+    trimFunction: function(str) {
+        if (!name) {
+            return "";
         }
+        return str.replace(/(^\s*)|(\s*$)/g, "");
     },
     getNowFormatDate: function() {
         var date = new Date();
@@ -25,7 +31,7 @@ var Base = {
         if (strDate >= 0 && strDate <= 9) {
             strDate = "0" + strDate;
         }
-        var currentdate = date.getFullYear() + seperator1 + month + seperator1 + strDate + " " + (date.getHours()>9?date.getHours():"0"+date.getHours()) + seperator2 + (date.getMinutes()>9?date.getMinutes():"0"+date.getMinutes()) + seperator2 + (date.getSeconds()>9?date.getSeconds():"0"+date.getSeconds());
+        var currentdate = date.getFullYear() + seperator1 + month + seperator1 + strDate + " " + (date.getHours() > 9 ? date.getHours() : "0" + date.getHours()) + seperator2 + (date.getMinutes() > 9 ? date.getMinutes() : "0" + date.getMinutes()) + seperator2 + (date.getSeconds() > 9 ? date.getSeconds() : "0" + date.getSeconds());
         return currentdate;
     },
     // 同步储存数据到sesstionStorage
