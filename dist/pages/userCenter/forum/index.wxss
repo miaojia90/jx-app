@@ -40,6 +40,10 @@ page {
   background-color: #FFF;
 }
 
+.forum-container .item-list-container:nth-child(1) {
+  margin-top: 0;
+}
+
 .forum-container .item-list-container .item-choice {
   height: 100rpx;
   line-height: 100rpx;

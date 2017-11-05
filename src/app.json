@@ -1,12 +1,19 @@
 {
     "pages": [
-        "pages/forum/forumOperate/forumList/index",
+        "pages/userCenter/register/index",
+        "pages/home/index",
+        "pages/userCenter/userUpdate/index",
+        "pages/userCenter/forum/index",
+        "pages/userCenter/reserve/index",
+        "pages/userCenter/news/index",
+        "pages/forum/forumOperate/forumItemDetail/index",
         "pages/forum/index",
+        "pages/forum/forumOperate/forumComment/index",
+        "pages/forum/forumOperate/forumList/index",
         "pages/business/others/index",
         "pages/business/ransomFloor/index",
         "pages/business/property/index",
         "pages/business/bridgeLoan/index",
-        "pages/index",
         "pages/userCenter/index"
     ],
     "window": {
@@ -20,7 +27,7 @@
         "borderStyle": "#dbdee4",
         "backgroundColor": "#FFF",
         "list": [{
-            "pagePath": "pages/index",
+            "pagePath": "pages/home/index",
             "iconPath": "img/index.png",
             "selectedIconPath": "img/index-active.png",
             "text": "主页"

@@ -1,0 +1,67 @@
+<!--
+ * 最新消息
+ * @Author   major.miao
+ * @DateTime 2017-11-01
+-->
+<view class="main-list-container">
+    <view class="list-item-container">
+        <view class="item">
+            <view class="content-box spe">
+                <view class="title">
+                    物业供求业务提醒
+                </view>
+                <view class="content">
+                    关于您于
+                    <text class="news-title">2017-11-05申请的过桥业务</text>已通过了审核，请及时联系相关的人员联系！
+                    <text class="tel-phone">135****6262</text>
+                </view>
+            </view>
+        </view>
+        <view class="item">
+            <view class="content-box spe">
+                <view class="title">
+                    物业供求业务提醒
+                </view>
+                <view class="content">
+                    关于您于
+                    <text class="news-title">2017-11-05发布的物业供求文章</text>有了最新的回复，请及时查看相关的信息！
+                </view>
+            </view>
+        </view>
+        <view class="item">
+            <view class="content-box spe">
+                <view class="title">
+                    文章消息提醒
+                </view>
+                <view class="content">
+                    关于您于
+                    <text class="news-title">2017-11-05发布的物业供求文章</text>有了最新的回复，请及时查看相关的信息！
+                </view>
+            </view>
+        </view>
+        <view class="item">
+            <view class="content-box spe">
+                <view class="title">
+                    过桥业务提醒
+                </view>
+                <view class="content">
+                    关于您于
+                    <text class="news-title">2017-11-05申请的过桥业务</text>已通过了审核，请及时联系相关的人员联系！
+                    <text class="tel-phone">135****6262</text>
+                </view>
+            </view>
+        </view>
+        <view class="item">
+            <view class="content-box spe">
+                <view class="title">
+                    过桥业务提醒
+                </view>
+                <view class="content">
+                    关于您于
+                    <text class="news-title">2017-11-05申请的过桥业务</text>已通过了审核，请及时联系相关的人员联系！
+                    <text class="tel-phone">135****6262</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

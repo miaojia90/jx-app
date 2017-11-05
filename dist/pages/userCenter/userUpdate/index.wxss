@@ -1,0 +1,19 @@
+page {
+  background-color: #FFF;
+}
+
+.update-user-box {
+  background-color: #FFF;
+  padding: 100rpx 0;
+}
+
+.update-user-box image {
+  display: block;
+  width: 200rpx;
+  height: 200rpx;
+  margin: 0 auto;
+}
+
+.update-user-box .content-box {
+  margin-top: 30rpx;
+}

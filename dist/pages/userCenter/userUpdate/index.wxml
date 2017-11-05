@@ -1,0 +1,30 @@
+<!--
+ * 主页
+ * @Author   major.miao
+ * @DateTime 2017-11-02
+-->
+<view class="main-container">
+    <view class="update-user-box">
+        <view class="header-box">
+            <image src="https://wx.jinfuzi.com/images/treasure/default-img.png"></image>
+        </view>
+        <view class="content-box">
+            <view class="form-main-container">
+                <form bindsubmit="formSubmit">
+                    <view class="content-box">
+                        <input class="input-view" type="text" placeholder="昵称" placeholder-class="placeholder" />
+                    </view>
+                    <view class="content-box">
+                        <input class="input-view" type="text" placeholder="电话" placeholder-class="placeholder" />
+                    </view>
+                   
+                    <view class="btn-view">
+                        <button class="btn-save active" formType="submit" size="default">
+                            保存
+                        </button>
+                    </view>
+                </form>
+            </view>
+        </view>
+    </view>
+</view>

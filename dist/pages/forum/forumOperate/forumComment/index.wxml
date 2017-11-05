@@ -1,0 +1,36 @@
+<!--
+ * 主页
+ * @Author   major.miao
+ * @DateTime 2017-11-02
+-->
+<import src="../../../common/imageUploader/imageUploader.wxml" />
+<view class="form-main-container">
+    <form bindsubmit="formSubmit">
+        <view class="content-box">
+            <view class="input-view">
+                <input class="input-view" type="text" placeholder="请输入标题" placeholder-class="placeholder" />
+            </view>
+        </view>
+        <view class="content-box">
+            <view class="section">
+                <picker bindchange="bindPickerChange" value="{{itemTypeIndex}}" range="{{arrayItemType}}">
+                    <view class="picker">
+                        类别：{{arrayItemType[itemTypeIndex]}}
+                    </view>
+                </picker>
+            </view>
+        </view>
+        <view class="content-box">
+            <textarea bindblur="bindTextAreaBlur" placeholder="其他说明" class="textarea-view" placeholder-class="placeholder" />
+        </view>
+        <!-- 上传 -->
+        <view class="container">
+            <template is="image_uploader" data="{{...uploadImgObj}}" />
+        </view>
+        <view class="btn-view">
+            <button class="btn-save" formType="submit" size="default">
+                保存
+            </button>
+        </view>
+    </form>
+</view>

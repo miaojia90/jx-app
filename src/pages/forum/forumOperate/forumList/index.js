@@ -15,5 +15,11 @@ Page({
   },
   onUnload: function() {
     // 页面关闭
+  },
+  bindForumComment: function() {
+    //进入到评论页面
+    wx.navigateTo({
+      url: '../forumComment/index'
+    });
   }
 })

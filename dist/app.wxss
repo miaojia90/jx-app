@@ -1,3 +1,4 @@
+@charset "UTF-8";
 page {
   background-color: #fff;
   display: -webkit-box;
@@ -257,6 +258,10 @@ page {
   border-radius: 0px;
 }
 
+.form-main-container .btn-view .btn-save.no-letter {
+  letter-spacing: 0rpx;
+}
+
 .form-main-container .btn-view .btn-save.active {
   background-color: #13227a;
   color: #FFF;
@@ -267,29 +272,41 @@ page {
 }
 
 .main-list-container .list-item-container .item {
-  padding: 20rpx 30rpx;
+  position: relative;
+  padding: 30rpx 30rpx;
+  border-bottom: 1px solid #dbdee4;
 }
 
-.main-list-container .list-item-container .item:after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 1px;
-  background-color: #dbdee4;
-  -webkit-transform: scaleY(0.5);
-  -ms-transform: scaleY(0.5);
-  transform: scaleY(0.5);
+.main-list-container .list-item-container .item .user-header-box {
+  position: absolute;
+  width: 120rpx;
 }
 
-.main-list-container .list-item-container .item:last-child:after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 0px;
-  background-color: #dbdee4;
-  -webkit-transform: scaleY(0.5);
-  -ms-transform: scaleY(0.5);
-  transform: scaleY(0.5);
+.main-list-container .list-item-container .item .user-header-box image {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.main-list-container .list-item-container .item .content-box {
+  margin-left: 130rpx;
+}
+
+.main-list-container .list-item-container .item .content-box.spe {
+  margin-left: 0;
+}
+
+.main-list-container .list-item-container .item .content-box .news-title {
+  font-size: 36rpx;
+  color: #d81e06;
+}
+
+.main-list-container .list-item-container .item .content-box .tel-phone {
+  font-size: 36rpx;
+  color: #1296db;
+}
+
+.main-list-container .list-item-container .item:last-child {
+  border-bottom: 0px solid #dbdee4;
 }
 
 .main-list-container .list-item-container .item text {
@@ -299,15 +316,27 @@ page {
 }
 
 .main-list-container .list-item-container .item .title {
+  width: 100%;
   font-size: 36rpx;
   height: 60rpx;
   line-height: 60rpx;
 }
 
 .main-list-container .list-item-container .item .content {
+  width: 100%;
   font-size: 36rpx;
   color: #555a73;
   line-height: 60rpx;
+}
+
+.main-list-container .list-item-container .item .comment {
+  background-color: #e6e6e6;
+  padding: 10rpx 20rpx;
+  border-radius: 10rpx;
+}
+
+.main-list-container .list-item-container .item .comment .comment-user {
+  color: #1296db;
 }
 
 .main-list-container .list-item-container .item .desc {
@@ -318,26 +347,41 @@ page {
 .main-list-container .list-item-container .item .desc .date {
   width: 300rpx;
   float: right;
+  text-align: right;
+}
+
+.main-list-container .list-item-container .item .desc .see {
+  width: 200rpx;
+  float: left;
+  text-align: left;
+}
+
+.fixed-comment-view {
+  position: fixed;
+  bottom: 140rpx;
+  right: 60rpx;
+  width: 100rpx;
+  background-color: #FFF;
+}
+
+.fixed-comment-view image {
+  width: 100rpx;
+  height: 100rpx;
 }
 
 .mui-ellipsis-2 {
   display: -webkit-box;
-  display: box;
-  overflow: hidden;
-  -o-text-overflow: ellipsis;
-  text-overflow: ellipsis;
-  word-wrap: break-word;
-  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 }
 
 .mui-ellipsis-1 {
-  display: -webkit-box;
-  display: box;
   overflow: hidden;
+  /*超出部分隐藏*/
+  white-space: nowrap;
+  /*不换行*/
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
-  word-wrap: break-word;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
+  /*超出部分文字以...显示*/
 }

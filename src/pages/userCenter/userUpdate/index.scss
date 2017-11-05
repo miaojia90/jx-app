@@ -1,0 +1,25 @@
+@function rpxchange($px) {
+    @return $px*2rpx;
+}
+
+$imgUrlPath:"@@@RESPREFIX@@@";
+@function urlPath($url) {
+    @return url($imgUrlPath+$url);
+}
+page {
+    background-color: #FFF;
+}
+
+.update-user-box {
+    background-color: #FFF;
+    padding: rpxchange(50) 0;
+    image {
+        display: block;
+        width: rpxchange(100);
+        height: rpxchange(100);
+        margin: 0 auto;
+    }
+    .content-box {
+        margin-top: rpxchange(15);
+    }
+}

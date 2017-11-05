@@ -1,0 +1,45 @@
+<!--
+ * 我的财富
+ * @Author   major.miao
+ * @DateTime 2016-11-25
+-->
+<view class="main-container">
+    <view class="update-user-box">
+        <view class="header-box">
+            <image src="@@@PREFIX@@@/treasure/default-img.png"></image>
+        </view>
+        <view class="content-box">
+            <view class="form-main-container">
+                <form>
+                    <view class="content-box">
+                        <input class="input-view" type="text" placeholder="昵称" placeholder-class="placeholder" />
+                    </view>
+                    <view class="content-box" wx:if="{{false}}">
+                        <input class="input-view" type="number" placeholder="联系人电话" maxlength="11" placeholder-class="placeholder" />
+                    </view>
+                    <view class="content-box" wx:if="{{false}}">
+                        <view class="section">
+                            <picker bindchange="bindPickerChange" value="{{itemTypeIndex}}" range="{{arrayItemType}}">
+                                <view class="picker">
+                                   {{arrayItemType[itemTypeIndex]}}
+                                </view>
+                            </picker>
+                        </view>
+                    </view>
+                    <view class="content-box" wx:if="{{false}}">
+                        <input class="input-view" type="number" placeholder="邀请码" maxlength="11" placeholder-class="placeholder" class="invite-code" />
+                    </view>
+                    <view class="other-box">
+                         <text>登录</text>|
+                         <text>注册</text>
+                    </view>
+                    <view class="btn-view" bindtap="bindStartEnterApp">
+                        <button class="btn-save no-letter active" formType="submit" size="default">
+                           开启金欣小程序
+                        </button>
+                    </view>
+                </form>
+            </view>
+        </view>
+    </view>
+</view>

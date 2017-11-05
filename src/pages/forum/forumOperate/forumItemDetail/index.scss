@@ -1,0 +1,12 @@
+@function rpxchange($px) {
+    @return $px*2rpx;
+}
+
+$imgUrlPath:"@@@RESPREFIX@@@";
+@function urlPath($url) {
+    @return url($imgUrlPath+$url);
+}
+
+page {
+    background-color: #F4F5F7;
+}

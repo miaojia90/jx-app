@@ -1,0 +1,43 @@
+page {
+  background-color: #FFF;
+}
+
+.main-container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.update-user-box {
+  background-color: #FFF;
+  width: 100%;
+}
+
+.update-user-box image {
+  display: block;
+  width: 200rpx;
+  height: 200rpx;
+  margin: 0 auto;
+}
+
+.update-user-box .content-box {
+  margin-top: 30rpx;
+}
+
+.update-user-box .other-box {
+  text-align: right;
+  padding: 80rpx;
+  font-size: 32rpx;
+  color: #36ab60;
+}
+
+.update-user-box .other-box text {
+  padding: 0 10rpx;
+}

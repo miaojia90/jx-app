@@ -1,0 +1,42 @@
+@function rpxchange($px) {
+    @return $px*2rpx;
+}
+
+$imgUrlPath:"@@@RESPREFIX@@@";
+@function urlPath($url) {
+    @return url($imgUrlPath+$url);
+}
+
+page {
+    background-color: #FFF;
+}
+
+.main-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.update-user-box {
+    background-color: #FFF;
+    width: 100%;
+    image {
+        display: block;
+        width: rpxchange(100);
+        height: rpxchange(100);
+        margin: 0 auto;
+    }
+    .content-box {
+        margin-top: rpxchange(15);
+    }
+    .other-box {
+    	text-align: right;
+    	padding:rpxchange(40);
+        font-size: rpxchange(16);
+        color: #36ab60;
+        text{
+        	padding:0 rpxchange(5);
+        }
+    }
+}

@@ -1,0 +1,43 @@
+<!--
+ * 我的财富
+ * @Author   major.miao
+ * @DateTime 2017-11-01
+-->
+<view class="main-list-container">
+    <view class="list-item-container">
+        <view class="item">
+            <view class="user-header-box">
+                <image src="https://wx.jinfuzi.com/images/treasure/default-img.png"></image>
+            </view>
+            <view class="content-box">
+                <view class="title">
+                    市场拆借利率
+                </view>
+                <view class="content">
+                    20170915市场拆借利率,20170915市场拆借利率,20170915市场拆借利率,20170915市场拆借利率20170915市场拆借利率,20170915市场拆借利率,20170915市场拆借利率,20170915市场拆借利率20170915市场拆借利率,20170915市场拆借利率,20170915市场拆借利率,20170915市场拆借利率
+                </view>
+                <view class="desc">
+                    <text class="see">12 人查看</text>
+                    <text class="date">2017-11-05 12:00</text>
+                </view>
+                <view class="comment">
+                    <view class="comment-item">
+                        <text class="comment-user">李莉</text>:
+                        <text class="comment-content">真好真好真好真好真好真好真好真好真好真好真好真好真好</text>
+                    </view>
+                    <view class="comment-item">
+                        <text class="comment-user">张超贤</text>:
+                        <text class="comment-content">真的很好哦！！！！！</text>
+                    </view>
+                    <view class="comment-item">
+                        <text class="comment-user">小米</text>:
+                        <text class="comment-content">厉害了~~我的哥</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="fixed-comment-view" bindtap="bindForumComment">
+        <image src="../../../../img/page/write-comment.png"></image>
+    </view>
+</view> 

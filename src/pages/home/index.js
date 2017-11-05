@@ -149,25 +149,25 @@ const conf = {
 			case 'bridge':
 				//跳转到相对于的页面
 				wx.navigateTo({
-					url: './business/bridgeLoan/index'
+					url: '../business/bridgeLoan/index'
 				});
 				break;
 			case 'floor':
 				//跳转到相对于的页面
 				wx.navigateTo({
-					url: './business/ransomFloor/index'
+					url: '../business/ransomFloor/index'
 				});
 				break;
 			case 'property':
 				//跳转到相对于的页面
 				wx.navigateTo({
-					url: './business/property/index'
+					url: '../business/property/index'
 				});
 				break;
 			case 'others':
 				//跳转到相对于的页面
 				wx.navigateTo({
-					url: './business/others/index'
+					url: '../business/others/index'
 				});
 				break;
 		}
