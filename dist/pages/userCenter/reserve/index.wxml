@@ -3,92 +3,59 @@
  * @Author   major.miao
  * @DateTime 2017-11-01
 -->
-<view class="forum-container">
-    <view class="item-list-container">
-        <view class="item-choice">
-            <view class="item-choice-title">
-                <image src="../../../img/page/bridge_loan.png" class="img-icon"></image>
-                <text>过桥</text>
+<view class="main-list-container">
+    <view class="list-item-container">
+        <view class="item">
+            <view class="content-box spe">
+                <view class="title">
+                    <image src="../../../img/page/bridge_loan.png" class="img-icon"></image>
+                    <text class="type">过桥业务</text>
+                    <text class="color-green">已审核</text>
+                </view>
+                <view class="content">
+                    关于您于
+                    2017-11-05申请的过桥业务已通过了审核，请及时联系相关的人员联系！
+                    <text class="tel-phone">135****6262</text>
+                </view>
             </view>
         </view>
-        <view class="item-container">
-            <view class="item">
-                <text>2017-11-03 借款主体的 联系人的过桥业务申请</text>
-            </view>
-            <view class="item">
-                <text>2017-11-03 借款主体的 联系人的过桥业务申请</text>
-            </view>
-            <view class="item">
-                <text>2017-11-03 借款主体的 联系人的过桥业务申请</text>
-            </view>
-            <view class="item">
-                <text>2017-11-03 借款主体的 联系人的过桥业务申请</text>
-            </view>
-        </view>
-    </view>
-    <view class="item-list-container">
-        <view class="item-choice">
-            <view class="item-choice-title">
-                <image src="../../../img/page/floor.png" class="img-icon"></image>
-                <text>赎楼</text>
+        <view class="item">
+            <view class="content-box spe">
+                <view class="title">
+                    <image src="../../../img/page/floor.png" class="img-icon"></image>
+                    <text class="type">赎楼业务</text>
+                    <text class="color-green">已审核</text>
+                </view>
+                <view class="content">
+                    关于您于
+                    2017-11-05发布的物业供求文章有了最新的回复，请及时查看相关的信息！
+                </view>
             </view>
         </view>
-        <view class="item-container">
-            <view class="item">
-                <text>2017-11-03 联系人的赎楼 业务申请</text>
-            </view>
-            <view class="item">
-                <text>2017-11-03 联系人的赎楼 业务申请</text>
-            </view>
-            <view class="item">
-                <text>2017-11-03 联系人的赎楼 业务申请</text>
-            </view>
-            <view class="item">
-                <text>2017-11-03 联系人的赎楼 业务申请</text>
-            </view>
-        </view>
-    </view>
-    <view class="item-list-container">
-        <view class="item-choice">
-            <view class="item-choice-title">
-                <image src="../../../img/page/build.png" class="img-icon"></image>
-                <text>物业</text>
+        <view class="item">
+            <view class="content-box spe">
+                <view class="title">
+                    <image src="../../../img/page/build.png" class="img-icon"></image>
+                    <text class="type">物业</text>
+                    <text class="color-blue">审核中</text>
+                </view>
+                <view class="content">
+                    关于您于
+                    2017-11-05发布的物业供求文章有了最新的回复，请及时查看相关的信息！
+                </view>
             </view>
         </view>
-        <view class="item-container">
-            <view class="item">
-                <text>2017-11-03 联系人的物业 业务申请</text>
-            </view>
-            <view class="item">
-                <text>2017-11-03联系人的物业 业务申请</text>
-            </view>
-            <view class="item">
-                <text>2017-11-03 联系人的物业 业务申请</text>
-            </view>
-            <view class="item">
-                <text>2017-11-03 联系人的物业 业务申请</text>
-            </view>
-        </view>
-    </view>
-    <view class="item-list-container">
-        <view class="item-choice">
-            <view class="item-choice-title">
-                <image src="../../../img/page/other.png" class="img-icon"></image>
-                <text>其他</text>
-            </view>
-        </view>
-        <view class="item-container">
-            <view class="item">
-                <text>2017-11-03 联系人的其他 业务申请</text>
-            </view>
-            <view class="item">
-                <text>2017-11-03 联系人的其他 业务申请</text>
-            </view>
-            <view class="item">
-                <text>2017-11-03 联系人的其他 业务申请</text>
-            </view>
-            <view class="item">
-                <text>2017-11-03 联系人的其他 业务申请</text>
+        <view class="item">
+            <view class="content-box spe">
+                <view class="title">
+                    <image src="../../../img/page/other.png" class="img-icon"></image>
+                    <text class="type">其他</text>
+                    <text class="color-red">审核未通过</text>
+                </view>
+                <view class="content">
+                    关于您于2017-11-05申请的过桥业务已通过了审核，请及时联系相关的人员联系！
+                    <text class="tel-phone">135****6262</text>
+                </view>
             </view>
         </view>
     </view>

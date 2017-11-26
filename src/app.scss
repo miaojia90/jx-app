@@ -197,8 +197,8 @@ page {
             height: rpxchange(55);
             line-height: rpxchange(55);
             letter-spacing: rpxchange(4);
-            &.no-letter{
-                  letter-spacing: rpxchange(0);
+            &.no-letter {
+                letter-spacing: rpxchange(0);
             }
             &.active {
                 background-color: #13227a;
@@ -207,6 +207,34 @@ page {
             border-radius:0px;
         }
     }
+}
+
+.color-green {
+    color: #0e932e !important;
+    border: 1px solid #0e932e;
+    padding:0 rpxchange(5);
+    margin: 0 rpxchange(10);
+}
+
+.color-red {
+    color: #d81e06!important;
+    border: 1px solid #d81e06;
+    padding:0 rpxchange(5);
+    margin: 0 rpxchange(10);
+}
+
+.color-orange {
+    color: #e98f36!important;
+    border: 1px solid #e98f36;
+    padding:0 rpxchange(5);
+    margin: 0 rpxchange(10);
+}
+
+.color-blue {
+    color: #1195db!important;
+    border: 1px solid #1195db;
+    padding:0 rpxchange(5);
+    margin: 0 rpxchange(10);
 }
 
 .main-list-container {
@@ -226,16 +254,16 @@ page {
             }
             .content-box {
                 margin-left: rpxchange(65);
-                &.spe{
-                    margin-left:0;
+                &.spe {
+                    margin-left: 0;
                 }
-                .news-title{
+                .news-title {
                     font-size: rpxchange(16);
-                    color:#d81e06;
+                    color: #d81e06;
                 }
-                .tel-phone{
+                .tel-phone {
                     font-size: rpxchange(16);
-                    color:#1296db;
+                    color: #1296db;
                 }
             }
 
@@ -290,7 +318,7 @@ page {
     bottom: rpxchange(70);
     right: rpxchange(30);
     width: rpxchange(50);
-    background-color:#FFF;
+    background-color: #FFF;
     image {
         width: rpxchange(50);
         height: rpxchange(50);
@@ -313,8 +341,8 @@ page {
     /*超出部分文字以...显示*/
 }
 
-.header-box{
-    image{
-        border-radius:50%;
+.header-box {
+    image {
+        border-radius: 50%;
     }
 }

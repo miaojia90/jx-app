@@ -267,6 +267,34 @@ page {
   color: #FFF;
 }
 
+.color-green {
+  color: #0e932e !important;
+  border: 1px solid #0e932e;
+  padding: 0 10rpx;
+  margin: 0 20rpx;
+}
+
+.color-red {
+  color: #d81e06 !important;
+  border: 1px solid #d81e06;
+  padding: 0 10rpx;
+  margin: 0 20rpx;
+}
+
+.color-orange {
+  color: #e98f36 !important;
+  border: 1px solid #e98f36;
+  padding: 0 10rpx;
+  margin: 0 20rpx;
+}
+
+.color-blue {
+  color: #1195db !important;
+  border: 1px solid #1195db;
+  padding: 0 10rpx;
+  margin: 0 20rpx;
+}
+
 .main-list-container .list-item-container {
   background-color: #FFF;
 }

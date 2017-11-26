@@ -11,99 +11,14 @@ page {
     background-color: #F4F5F7;
 }
 
-.forum-container {
-    .head-container {
-        width: 100%;
-        overflow: hidden;
-        background-color: #FFF;
-        .left-box,
-        .right-box {
-            width: 50%;
-            float: left;
-            .item {
-                border-right: 1px solid #F4F5F7;
-                margin-bottom: rpxchange(20);
-                view {
-                    .img-icon {
-                        display: block;
-                        width: rpxchange(40);
-                        height: rpxchange(40);
-                        margin: rpxchange(20) auto;
-                    }
-                    &.desc-text {
-                        text-align: center;
-                        font-size: rpxchange(20);
-                        color: #13227a;
-                    }
-                }
-            }
-        }
-    }
-    .item-list-container {
-        margin-top: rpxchange(10);
-        background-color: #FFF;
-        &:nth-child(1){
-            margin-top: 0;
-        }
-        .item-choice {
-            height: rpxchange(50);
-            line-height: rpxchange(50);
-            font-size: rpxchange(16);
-            color: #13227a;
-            .item-choice-title {
-                display: inline-block;
-                width: 85%;
-                padding-left: rpxchange(15);
-            }
-            &:after {
-                content: '';
-                display: block;
-                width: 100%;
-                height: 1px;
-                background-color: #dbdee4;
-                transform: scaleY(0.5);
-            }
-            .img-icon {
-                width: rpxchange(18);
-                height: rpxchange(18);
-                display: inline-block;
-                vertical-align: text-bottom;
-                margin-right: rpxchange(10);
-            }
-        }
-        .item-container {
-            font-size: rpxchange(14);
-            color: #666C88;
-            line-height: rpxchange(40);
-            padding: 0 rpxchange(15);
-            .item {
-                &:after {
-                    content: '';
-                    display: block;
-                    width: 100%;
-                    height: 1px;
-                    background-color: #dbdee4;
-                    transform: scaleY(0.5);
-                }
-                &:last-child:after {
-                    content: '';
-                    display: block;
-                    width: 100%;
-                    height: 0px;
-                    background-color: #dbdee4;
-                    transform: scaleY(0.5);
-                }
-                .img-icon {
-                    width: rpxchange(18);
-                    height: rpxchange(18);
-                    display: inline-block;
-                    vertical-align: text-bottom;
-                    margin-right: rpxchange(10);
-                }
-            }
-        }
-    }
+.img-icon {
+    width: rpxchange(18);
+    height: rpxchange(18);
+    display: inline-block;
+    vertical-align: text-bottom;
+    margin-right: rpxchange(10);
 }
+
 
 .text-arrows {
     width: rpxchange(8);
