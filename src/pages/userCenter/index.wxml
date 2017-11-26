@@ -7,10 +7,10 @@
     <view class="header-view">
         <!--用户头像-->
         <view class="user-view">
-            <image src="@@@PREFIX@@@/treasure/default-img.png"></image>
+            <image src="{{userInfo!=null?userInfo.headPhoto:'@@@PREFIX@@@/treasure/default-img.png'}}"></image>
             <view class="userInfo-box">
-                <view class="userName">未登录</view>
-                <view class="userPhone">***</view>
+                <view class="userName">{{userInfo!=null?userInfo.nickname:'未登录'}}</view>
+                <view class="userPhone">{{userInfo!=null?userInfo.tel:'****'}}</view>
             </view>
         </view>
     </view>
@@ -45,8 +45,5 @@
             <text></text>
             <text class="text-arrows"></text>
         </view>
-    </view>
-    <view class="item-btn-view">
-        <button class="item-btn">立即登录</button>
     </view>
 </view>

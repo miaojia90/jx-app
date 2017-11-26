@@ -6,18 +6,20 @@
 <view class="main-container">
     <view class="update-user-box">
         <view class="header-box">
-            <image src="https://wx.jinfuzi.com/images/treasure/default-img.png"></image>
+            <image src="{{userInfo!=null?userInfo.headPhoto:'https://wx.jinfuzi.com/images/treasure/default-img.png'}}"></image>
         </view>
         <view class="content-box">
             <view class="form-main-container">
                 <form bindsubmit="formSubmit">
                     <view class="content-box">
-                        <input class="input-view" type="text" placeholder="昵称" placeholder-class="placeholder" />
+                        <input class="input-view" type="text" placeholder="昵称" placeholder-class="placeholder" name="userName" value="{{userInfo.nickname}}"/>
                     </view>
                     <view class="content-box">
-                        <input class="input-view" type="text" placeholder="电话" placeholder-class="placeholder" />
+                        <input class="input-view" type="text" placeholder="电话" placeholder-class="placeholder"  name="userPhone" value="{{userInfo.tel}}"/>
                     </view>
-                   
+  <!--                   <view class="content-box">
+                        <input class="input-view" type="password" placeholder="密码" placeholder-class="placeholder" name="password"  value="{{userInfo.password}}"/>
+                    </view> -->
                     <view class="btn-view">
                         <button class="btn-save active" formType="submit" size="default">
                             保存

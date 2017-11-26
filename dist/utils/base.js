@@ -6,6 +6,8 @@
 var Base = {
     // routerUrl: "https://wx.jinfuzi.net/",
     routerUrl: 'https://wx.jinfuzi.com/',
+    //接口地址
+    baseUrl: 'https://it919.cn/api/',
     //加密的Key值
     publicKey: "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCJHooMe+cMSx/thsHtXv7ZzhD7h/7eyuC7Qc0j99mwNeoOLu1PBe/gZL4x/Dix2sykvqs0ED6vma5+cPfiGUdAh/aANoSvGG4VpczHIvhz/yEPJ5pgWGjiI8m9fezzKHuarmBLiRqit+yLbLPpTSeaY5EjxUaUF/ltWpwn6+LpQwIDAQAB",
     //公共的数据
@@ -257,18 +259,19 @@ var Base = {
                     });
                     return;
                 } else {
-                    var routerUrl = Base.routerUrl;
+                    var routerUrl = Base.baseUrl;
                     // openkey=wxsid
                     // jsonString={"cityname": "上海", "key": "1430ec127e097e1113259c5e1be1ba70"}
-                    var openkey = Base.getSessionStorage(Base.data.storageKeys.wxId);
-                    params = params.replace('jsonString=', "");
-                    params = params.substring(0, params.length - 1);
-                    params = params + ',"openkey":"' + openkey + '"}';
+                    // var openkey = Base.getSessionStorage(Base.data.storageKeys.wxId);
+                    // params = params.replace('jsonString=', "");
+                    // params = params.substring(0, params.length - 1);
+                    // params = params + ',"openkey":"' + openkey + '"}';
                     routerUrl += method;
                     wx.request({
                         url: routerUrl,
                         header: {
-                            'content-type': 'application/json'
+                            // 'content-type': 'application/json'
+                            'Content-Type': 'application/x-www-form-urlencoded'
                         },
                         method: "POST",
                         data: params,
@@ -299,7 +302,7 @@ var Base = {
                     });
                     return;
                 } else {
-                    var routerUrl = Base.routerUrl;
+                    var routerUrl = Base.baseUrl;
                     routerUrl += method;
                     var openkey = Base.getSessionStorage(Base.data.storageKeys.wxId);
                     var jsonstring = null;

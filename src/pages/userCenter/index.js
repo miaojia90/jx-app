@@ -1,39 +1,111 @@
-// pages/component/common/emptySearch/emptySearch.js
-Page({
-  data: {},
-  onLoad: function(options) {
-    // 页面初始化 options为页面跳转所带来的参数
+//用户中心 主页
+'use strict';
+var BaseUtils = require('../../utils/base.js');
+const conf = {
+  data: {
+    userInfo: null,
+    isLogin: false,
+    sid: null,
+    uid: null
   },
-  onReady: function() {
-    // 页面渲染完成
-  },
-  onShow: function() {
-    // 页面显示
-  },
-  onHide: function() {
-    // 页面隐藏
-  },
-  onUnload: function() {
-    // 页面关闭
-  },
-  enterNews: function() {
-    wx.navigateTo({
-      url: './news/index'
+  onLoad() {
+    //获取用户信息
+    var sid = BaseUtils.base.getSessionStorage("sid");
+    var uid = BaseUtils.base.getSessionStorage("uid");
+    this.setData({
+      sid: sid,
+      uid: uid
+    });
+    if (!sid) {
+      //提示用户未登录
+      wx.redirectTo({
+        url: 'register/index'
+      })
+      return;
+    }
+    var method = 'user/info',
+      params = {
+        uid: uid,
+        sid: sid
+      };
+    var that = this;
+    BaseUtils.base.getDataPostApi(method, params, function(data) {
+      var dataResult = data;
+      //注册成功跳转到登录页
+      if (dataResult.status == 0) {
+        if (dataResult.result.code == '300001') {
+          //清除本地的sid和uid
+          BaseUtils.base.setSessionStorage("sid", "");
+          BaseUtils.base.setSessionStorage("uid", "");
+          BaseUtils.base.setSessionStorage("completeInfo", false);
+        }
+        wx.showModal({
+          content: dataResult.result.message,
+          showCancel: false,
+          success: function(res) {}
+        });
+        wx.redirectTo({
+          url: 'register/index'
+        });
+        return;
+      }
+      if (dataResult.status == 1) {
+        var dataInfo = dataResult.result.data;
+        //显示数据到界面上
+        that.setData({
+          userInfo: dataInfo
+        });
+
+      }
     });
   },
-  enterBusiness: function() {
+  enterUpdateUser() {
+    if (!this.data.sid) {
+      wx.redirectTo({
+        url: 'register/index'
+      });
+    }
+    //修改资料
     wx.navigateTo({
-      url: './reserve/index'
+      url: 'userUpdate/index'
     });
   },
-  enterForum: function() {
+  enterNews() {
+    //进入到我的消息模块
+    if (!this.data.sid) {
+      wx.redirectTo({
+        url: 'register/index'
+      });
+    }
+    //修改资料
     wx.navigateTo({
-      url: './forum/index'
+      url: 'news/index'
     });
   },
-  enterUpdateUser: function() {
+  enterBusiness() {
+    //进入到我的消息模块
+    if (!this.data.sid) {
+      wx.redirectTo({
+        url: 'register/index'
+      });
+    }
+    //业务预约
     wx.navigateTo({
-      url: './userUpdate/index'
+      url: 'reserve/index'
+    });
+  },
+  enterForum() {
+    //进入到我的消息模块
+    if (!this.data.sid) {
+      wx.redirectTo({
+        url: 'register/index'
+      });
+    }
+    //修改资料
+    wx.navigateTo({
+      url: 'forum/index'
     });
   }
-})
+}
+
+Page(conf);
