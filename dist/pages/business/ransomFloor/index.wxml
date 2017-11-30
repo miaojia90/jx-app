@@ -7,28 +7,28 @@
 <view class="form-main-container">
     <form bindsubmit="formSubmit">
         <view class="content-box">
-            <input class="input-view" type="text" placeholder="联系人" placeholder-class="placeholder"/>
+            <input class="input-view" type="text" placeholder="联系人" placeholder-class="placeholder" name="contacts"/>
         </view>
         <view class="content-box">
-            <input class="input-view" type="number" placeholder="联系人电话" maxlength="11" placeholder-class="placeholder"/>
+            <input class="input-view" type="number" placeholder="联系人电话" maxlength="11" placeholder-class="placeholder" name="contactsTel"/>
         </view>
         <view class="content-box">
-            <input class="input-view" type="text" placeholder="职业" placeholder-class="placeholder"/>
+            <input class="input-view" type="text" placeholder="职业" placeholder-class="placeholder" name="profession"/>
         </view>
         <view class="content-box">
-            <input class="input-view" type="text" placeholder="房子所在楼盘名称" placeholder-class="placeholder"/>
+            <input class="input-view" type="text" placeholder="房子所在楼盘名称" placeholder-class="placeholder" name="buildingName"/>
         </view>
         <view class="content-box">
-            <input class="input-view" type="text" placeholder="贷款所在银行" placeholder-class="placeholder"/>
+            <input class="input-view" type="text" placeholder="贷款所在银行" placeholder-class="placeholder" name="bank"/>
         </view>
         <view class="content-box">
-            <input class="input-view" type="number" placeholder="资金缺口" placeholder-class="placeholder"/>
+            <input class="input-view" type="number" placeholder="资金缺口" placeholder-class="placeholder" name="money"/>
         </view>
         <view class="content-box">
-            <input class="input-view" type="number" placeholder="预计使用多久" placeholder-class="placeholder"/>
+            <input class="input-view" type="number" placeholder="预计使用多久" placeholder-class="placeholder" name="useDays"/>
         </view>
         <view class="content-box">
-            <textarea bindblur="bindTextAreaBlur" placeholder="其他说明" class="textarea-view" placeholder-class="placeholder"/>
+            <textarea bindblur="bindTextAreaBlur" placeholder="其他说明" class="textarea-view" placeholder-class="placeholder" name="remark"/>
         </view>
         <!-- 上传 -->
         <view class="container">
@@ -36,7 +36,7 @@
         </view>
 
         <view class="btn-view">
-            <button class="btn-save" formType="submit" size="default">
+            <button class="btn-save active" formType="submit" size="default">
                 保存
             </button>
         </view>

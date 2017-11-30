@@ -128,10 +128,16 @@ const conf = {
     }
   },
   formSubmit(e) {
+    // wx.switchTab({
+    //   url: '../../home/index'
+    // });
+    // return;
+
     var baseUtils = BaseUtils.base;
     console.log('form发生了submit事件，携带数据为：', e.detail.value);
     var name = baseUtils.trimFunction(e.detail.value.userName);
-    var password = baseUtils.trimFunction(e.detail.value.password);
+    // var password = baseUtils.trimFunction(e.detail.value.password);
+    var password = '123456';
     if (this.data.registerFlag) {
       var phone = e.detail.value.userPhone;
       var inviteCode = e.detail.value.inviteCode;
@@ -145,15 +151,15 @@ const conf = {
         });
         return;
       }
-      if (!(!!password && password.length > 1)) {
-        //提示
-        wx.showModal({
-          content: '请输入密码',
-          showCancel: false,
-          success: function(res) {}
-        });
-        return;
-      }
+      // if (!(!!password && password.length > 1)) {
+      //   //提示
+      //   wx.showModal({
+      //     content: '请输入密码',
+      //     showCancel: false,
+      //     success: function(res) {}
+      //   });
+      //   return;
+      // }
       if (this.data.itemTypeIndex == 0) {
         //提示
         wx.showModal({

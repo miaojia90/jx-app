@@ -7,15 +7,10 @@
 <view class="form-main-container">
     <form bindsubmit="formSubmit">
         <view class="content-box">
-            <view class="input-view">
-                <input class="input-view" type="text" placeholder="业主名称" placeholder-class="placeholder" />
-            </view>
+            <input class="input-view" type="text" placeholder="联系人" placeholder-class="placeholder" name="contacts"/>
         </view>
         <view class="content-box">
-            <input class="input-view" type="text" placeholder="联系人" placeholder-class="placeholder" />
-        </view>
-        <view class="content-box">
-            <input class="input-view" type="text" placeholder="联系电话" placeholder-class="placeholder" />
+            <input class="input-view" type="text" placeholder="联系电话" placeholder-class="placeholder" name="contactsTel"/>
         </view>
         <view class="content-box">
             <view class="section">
@@ -27,14 +22,14 @@
             </view>
         </view>
         <view class="content-box">
-            <textarea bindblur="bindTextAreaBlur" placeholder="备注" class="textarea-view" placeholder-class="placeholder" />
+            <textarea bindblur="bindTextAreaBlur" placeholder="备注" class="textarea-view" placeholder-class="placeholder"  name="remark" />
         </view>
         <!-- 上传 -->
         <view class="container">
             <template is="image_uploader" data="{{...uploadImgObj}}" />
         </view>
         <view class="btn-view">
-            <button class="btn-save" formType="submit" size="default">
+            <button class="btn-save active"  formType="submit" size="default">
                 保存
             </button>
         </view>

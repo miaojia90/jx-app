@@ -94,7 +94,7 @@ class ImageUploader {
         console.info('为了演示效果，直接 resolve true ，真实使用时，请删除 return Promise.resolve(true);');
         return Promise.resolve(true);
 
-        return wechat.uploadFile(uploadParams['url'], filePath, uploadParams['name'], formData);
+        // return wechat.uploadFile(uploadParams['url'], filePath, uploadParams['name'], formData);
     }
 
     _addToUploadedPaths(resp, filePath) {

@@ -26,20 +26,20 @@
         </view>
         <view class="content-box">
             <view class="input-view">
-                <input class="input-view" type="text" placeholder="业主名称" placeholder-class="placeholder" />
+                <input class="input-view" type="text" placeholder="业主名称" placeholder-class="placeholder" name="owner"/>
             </view>
         </view>
         <view class="content-box">
-            <input class="input-view" type="text" placeholder="联系人(与业主关系)" placeholder-class="placeholder" />
+            <input class="input-view" type="text" placeholder="联系人(与业主关系)" placeholder-class="placeholder"  name="contacts"/>
         </view>
         <view class="content-box">
-            <input class="input-view" type="text" placeholder="联系电话" placeholder-class="placeholder" />
+            <input class="input-view" type="text" placeholder="联系电话" name="contactsTel" placeholder-class="placeholder" />
         </view>
         <view class="content-box">
-            <input class="input-view" type="text" placeholder="土地面积" placeholder-class="placeholder" />
+            <input class="input-view" type="text" placeholder="土地面积"  name="landArea" placeholder-class="placeholder" />
         </view>
         <view class="content-box">
-            <input class="input-view" type="number" placeholder="建筑面积" placeholder-class="placeholder" />
+            <input class="input-view" type="number" placeholder="建筑面积" name="buildingArea" placeholder-class="placeholder" />
         </view>
         <view class="content-box no-border">
             <label>房租款项性质</label>
@@ -57,7 +57,7 @@
             <template is="image_uploader" data="{{...uploadImgObj}}" />
         </view>
         <view class="btn-view">
-            <button class="btn-save" formType="submit" size="default">
+            <button class="btn-save active" formType="submit" size="default">
                 保存
             </button>
         </view>

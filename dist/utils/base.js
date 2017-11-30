@@ -304,21 +304,22 @@ var Base = {
                 } else {
                     var routerUrl = Base.baseUrl;
                     routerUrl += method;
-                    var openkey = Base.getSessionStorage(Base.data.storageKeys.wxId);
-                    var jsonstring = null;
-                    jsonstring = params.replace('jsonString={"', "?");
-                    jsonstring = Base.replaceAll(jsonstring, '":"', '=');
-                    jsonstring = Base.replaceAll(jsonstring, '","', '&');
-                    jsonstring = Base.replaceAll(jsonstring, '"}', '');
-                    jsonstring = jsonstring + "&openkey=" + openkey;
-                    routerUrl += jsonstring;
+                    // var openkey = Base.getSessionStorage(Base.data.storageKeys.wxId);
+                    // var jsonstring = null;
+                    // jsonstring = params.replace('jsonString={"', "?");
+                    // jsonstring = Base.replaceAll(jsonstring, '":"', '=');
+                    // jsonstring = Base.replaceAll(jsonstring, '","', '&');
+                    // jsonstring = Base.replaceAll(jsonstring, '"}', '');
+                    // jsonstring = jsonstring + "&openkey=" + openkey;
+                    // routerUrl += jsonstring;
                     //微信小程序请求
                     wx.request({
                         url: routerUrl,
                         header: {
-                            'content-type': 'application/json'
+                            'Content-Type': 'application/x-www-form-urlencoded'
                         },
                         method: "GET",
+                        data: params,
                         complete: function(res) {
                             typeof succesCallback == 'function' && succesCallback(res.data);
                         },

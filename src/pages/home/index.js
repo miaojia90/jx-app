@@ -171,6 +171,35 @@ const conf = {
 				});
 				break;
 		}
+	},
+	//获取月排表数据
+	getMonthTable() {
+		var d = new Date();
+		var strDate = d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate();
+		var method = 'home/month-table',
+			params = {
+				size: 30,
+				date: strDate
+			};
+		BaseUtils.base.getDataGetApi(method, params, function(data) {
+			var dataResult = data;
+			//注册成功跳转到登录页
+			if (dataResult.status == 0) {
+				wx.showModal({
+					content: dataResult.result.message,
+					showCancel: false,
+					success: function(res) {}
+				});
+				return;
+			}
+			if (dataResult.status == 1) {
+				var dataInfo = dataResult.result.data;
+				//提示数据到界面上 获取月排表数据
+
+			} else {
+				return;
+			}
+		});
 	}
 };
 

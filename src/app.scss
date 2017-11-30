@@ -231,8 +231,8 @@ page {
 }
 
 .color-blue {
-    color: #1195db!important;
-    border: 1px solid #1195db;
+    color: #aa0!important;
+    border: 1px solid #aa0;
     padding:0 rpxchange(5);
     margin: 0 rpxchange(10);
 }
@@ -344,5 +344,20 @@ page {
 .header-box {
     image {
         border-radius: 50%;
+    }
+}
+
+.empty-container{
+    image{
+        display: block;
+        width: rpxchange(150);
+        height: rpxchange(150);
+        margin:rpxchange(100) auto 0 auto;
+    }
+    .txt-desc{
+        text-align: center;
+        line-height: rpxchange(50);
+        font-size: rpxchange(18);
+        color:#555a73;
     }
 }

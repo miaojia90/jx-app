@@ -6,31 +6,33 @@
 <view class="form-main-container">
     <form bindsubmit="formSubmit">
         <view class="content-box">
-            <input class="input-view" type="text" placeholder="借款主体名称" placeholder-class="placeholder"/>
+            <input class="input-view" type="text" placeholder="借款主体名称" placeholder-class="placeholder" name="name"/>
         </view>
         <view class="content-box">
-            <input class="input-view" type="text" placeholder="联系人名称" placeholder-class="placeholder"/>
+            <input class="input-view" type="text" placeholder="联系人名称" placeholder-class="placeholder" name="contacts"/>
         </view>
         <view class="content-box">
-            <input class="input-view" type="number" placeholder="联系人电话" maxlength="11" placeholder-class="placeholder"/>
+            <input class="input-view" type="number" placeholder="联系人电话" maxlength="11" placeholder-class="placeholder" name="contactsTel"/>
         </view>
         <view class="content-box">
-            <input class="input-view" type="number" placeholder="资金缺口" placeholder-class="placeholder"/>
+            <input class="input-view" type="number" placeholder="资金缺口(万)" placeholder-class="placeholder" name="money"/>
         </view>
         <view class="content-box">
-            <input class="input-view" type="number" placeholder="预约用款日" placeholder-class="placeholder"/>
+            <input class="input-view" type="number" placeholder="预约用款日" placeholder-class="placeholder" name="appointmentDate"/>
         </view>
         <view class="content-box">
-            <input class="input-view" type="number" placeholder="预计使用天数(10月28日填写1028)" placeholder-class="placeholder" />
+            <input class="input-view" type="number" placeholder="预计使用天数(10月28日填写1028)" placeholder-class="placeholder" name="useDays"/>
         </view>
         <view class="content-box">
-            <input class="input-view" type="number" placeholder="最早用款日" placeholder-class="placeholder" />
+            <input class="input-view" type="number" placeholder="最早用款日" placeholder-class="placeholder" name="recentlyDate"/>
         </view>
         <view class="content-box">
-            <input class="input-view" type="number" placeholder="最迟用款日" placeholder-class="placeholder"/>
+            <input class="input-view" type="number" placeholder="最迟用款日" placeholder-class="placeholder" name="lastDate"/>
         </view>
         <view class="content-box no-border">
-            <radio  class="radio-view" /><text class="text-view" >合同期内</text>
+        <checkbox-group class="radio-group" bindchange="checkChange">
+              <checkbox class="radio-view" value="合同期内" checked="{{isProperty}}"/><text class="text-view" >合同期内</text>
+        </checkbox-group>
         </view>
         <view class="btn-view">
             <button class="btn-save active" formType="submit" size="default">
