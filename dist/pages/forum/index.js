@@ -1,6 +1,6 @@
 'use strict';
 //过桥业务 Add by:major
-var BaseUtils = require('./../../../utils/base.js');
+var BaseUtils = require('./../../utils/base.js');
 const conf = {
   data: {
     isProperty: false

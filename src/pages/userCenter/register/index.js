@@ -128,10 +128,10 @@ const conf = {
     }
   },
   formSubmit(e) {
-    // wx.switchTab({
-    //   url: '../../home/index'
-    // });
-    // return;
+    wx.switchTab({
+      url: '../../home/index'
+    });
+    return;
 
     var baseUtils = BaseUtils.base;
     console.log('form发生了submit事件，携带数据为：', e.detail.value);

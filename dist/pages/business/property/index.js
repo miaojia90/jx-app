@@ -10,10 +10,12 @@ const conf = {
 			//以上三个配置项详情请看小程序文档
 			uploadedImagesPaths: [], //保存已上传的图片路径，也可以设置初始时就显示的图片
 			uploadParams: {
-				url: '', //后台接收上传图片的路径
+				url: 'https://wx.jinfuzi.com/images/upload', //后台接收接口的地址 通过file取到对象
 				name: 'file', //后台依靠这个字段拿到文件对象
 				formData: {} //这个字段可以设置传到后台的额外的参数
 				//以上三个配置项详情请看小程序文档
+				//字符串编码函数是encodeURL 
+				// http://www.wxapp-union.com/forum.php?mod=viewthread&tid=1065
 			}
 		}),
 		arrayItemType: ['请选择', '厂房', '土地', '自建房', '商品房', '商铺'],

@@ -14,7 +14,7 @@ const defaultData = {
     maxCount: 1,
     uploadedImagesPaths: [],
     uploadParams: {
-        url: '',
+        url: '', //接口地址
         name: 'file',
         formData: {}
     }
@@ -92,9 +92,9 @@ class ImageUploader {
         let formData = Object.assign({}, uploadParams['formData'], {});
 
         console.info('为了演示效果，直接 resolve true ，真实使用时，请删除 return Promise.resolve(true);');
-        return Promise.resolve(true);
-
-        // return wechat.uploadFile(uploadParams['url'], filePath, uploadParams['name'], formData);
+        // return Promise.resolve(true);
+        console.log("上传图片", uploadParams['url']);
+        return wechat.uploadFile(uploadParams['url'], filePath, uploadParams['name'], formData);
     }
 
     _addToUploadedPaths(resp, filePath) {
